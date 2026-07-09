@@ -1,0 +1,250 @@
+nav {
+    background-color: lightgray;
+    padding: 10px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+
+}
+
+.nav-links a:hover {
+    background-color: red;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.imageslider {
+    height: 80vh;
+    background-color: rgb(165, 165, 165);
+    background-image: url('https://static.vecteezy.com/system/resources/previews/045/931/711/non_2x/strawberry-cake-3d-item-free-png.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.content_for_slider {
+    display: flex;
+    margin: 10% 50% 25% 15%;
+    padding: 0%;
+    list-style: none;
+    flex-direction: column;
+}
+
+.content_for_slider h1 {
+    background-image: linear-gradient(to right, red, black, rgb(64, 233, 55));
+    background-clip: text;
+    color: transparent;
+    font-size: 50px;
+}
+
+.content_for_slider button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 26px 0 rgba(0, 0, 0, 0.2), 0 16px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content_for_slider button:hover {
+    background-color: rgb(248, 129, 129);
+}
+
+.ifr {
+    margin: 2% 4% 3% 4%;
+    padding: 10px;
+}
+
+.ifr table {
+    margin: 2% 4% 2% 4% ;
+}
+
+.ifr h1 {
+    text-align: left;
+    font-size: 50px;
+}
+
+.ifr h2 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.ifr p {
+    height: 50vh;
+    text-align: start;
+    font-size: 20px;
+}
+
+.frame {
+    background-image: url(./dark-concrete-texture.jpg);
+    color: whitesmoke;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.frame p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    margin: 30px;
+}
+
+
+.content {
+    display: grid;
+    gap: 1px;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 100px 10px 100px;
+}
+
+.first {
+    margin: 10px 20px 10px 20px;
+}
+
+.first p {
+    font-size: 20px;
+    text-align: start;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.first h1 {
+    font-size: 40px;
+    text-align: start;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.color {
+    font-size: 50px;
+    color: blue;
+}
+
+.popular {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 200px 10px 200px;
+}
+
+.boxa {
+    box-shadow: 10px 10px 50px 5px gray;
+
+}
+
+.boxa h1 {
+    text-align: center;
+    color: gray;
+}
+
+.boxa p {
+    text-align: center;
+    color: rgb(208, 207, 207);
+}
+
+.staff {
+    background-color: rgb(37, 37, 37);
+    /* margin: 10px 100px 10px 100px; */
+    color: aliceblue;
+}
+
+.heding {
+    text-align: center;
+}
+
+.name {
+    display: grid;
+    gap: 1px;
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px 200px 10px 200px;
+}
+
+.employe {
+    margin: 0px 10px 0px 10px;
+
+}
+
+.employe p {
+    text-align: center;
+}
+
+.last {
+    background-color: rgb(58, 57, 57);
+}
+
+.box {
+    display: grid;
+    color: wheat;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px 200px 10px 200px;
+    padding: 10px;
+
+}
+
+.foter-link {
+    text-decoration: none;
+    color: wheat;
+}
+
+.last-box p {
+    font-size: 20px;
+}
+
+.image {
+    display: grid;
+    gap: 1px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    /* margin: 10px 200px 10px 200px; */
+}
+
+.imagesss img {
+    height: 60px;
+    width: 60p x;
+}
+
+.second_last {
+    margin: 10px 200px 10px 200px;
+    color: wheat;
+    padding: 30px;
+}
+.second_last p{
+    text-align: center;
+}
