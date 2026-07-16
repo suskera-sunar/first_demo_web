@@ -239,3 +239,88 @@ nav {
     }
 }
 
+.staff {
+    background-color: rgb(37, 37, 37);
+    color: aliceblue;
+}
+
+.heding {
+    text-align: center;
+}
+
+.name {
+    width: auto;
+    height: auto;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    margin: 10px auto;
+    padding: 0 4vw;
+}
+
+.employe {
+    margin: 0px 10px 0px 10px;
+}
+
+.employe p {
+    text-align: center;
+}
+
+.last {
+    background-color: rgb(58, 57, 57);
+}
+
+.box {
+    display: grid;
+    color: wheat;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 10px auto;
+    padding: 10px 4vw;
+}
+
+.foter-link {
+    text-decoration: none;
+    color: wheat;
+}
+
+.last-box p {
+    font-size: 16px;
+}
+
+.image {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.imagesss img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    display: block;
+}
+
+.second_last {
+    margin: 10px auto;
+    color: wheat;
+    padding: 30px 4vw;
+}
+
+@media (max-width: 600px) {
+    .first h1 {
+        font-size: 28px;
+    }
+
+    .color {
+        font-size: 34px;
+    }
+
+    .last-box p {
+        font-size: 14px;
+    }
+
+    .second_last {
+        padding: 20px 4vw;
+    }
+}
