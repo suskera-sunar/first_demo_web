@@ -1,3 +1,1 @@
-﻿# first_demo_web
-preview link 
-https://suskera-sunar.github.io/first_demo_web/
+﻿

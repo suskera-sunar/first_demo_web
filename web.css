@@ -49,26 +49,29 @@ nav {
 .imageslider {
     height: 80vh;
     background-color: rgb(165, 165, 165);
-    background-image: url('https://static.vecteezy.com/system/resources/previews/045/931/711/non_2x/strawberry-cake-3d-item-free-png.png');
-    background-size: contain;
-    background-position: right;
+    background-image: url('https://images.unsplash.com/photo-1548943487-a2e1fe2e4a53?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    align-items: flex-end;
 }
 
 .content_for_slider {
     display: flex;
-    margin: 10% 50% 25% 15%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     list-style: none;
     flex-direction: column;
+    padding-left: 4vw;
+    padding-bottom: 6vh;
 }
 
 .content_for_slider h1 {
     background-image: linear-gradient(to right, red, black, rgb(64, 233, 55));
     background-clip: text;
     color: transparent;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .content_for_slider button {
@@ -92,33 +95,73 @@ nav {
     display: flex;
     margin: 2% 4% 3% 4%;
     padding: 10px;
-    /* grid-template-columns: 1fr 1fr; */
     align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .content_i {
     /* background-color: aqua; */
     display: block;
     height: auto;
-    padding: 10vh;
+    padding: 6vh 0;
+    flex: 1;
+    min-width: 280px;
 
 }
 
+@media (max-width: 900px) {
+    .ifr {
+        flex-direction: column;
+    }
+
+    .content_i {
+        padding: 4vh 0;
+    }
+
+    .imageslider {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content_for_slider {
+        padding-left: 4vw;
+    }
+
+    .imageslider {
+        height: 55vh;
+        align-items: flex-start;
+    }
+
+    .image {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
 .content_i h1 {
     text-align: left;
-    font-size: 50px;
+    font-size: 3.8vw;
 }
 
 
 .content_i h2 {
     text-align: left;
-    font-size: 30px;
+    font-size: 2.6vw;
 }
 
 .content_i p {
     /* height: 50vh; */
     text-align: start;
-    font-size: 20px;
+    font-size: clamp(14px, 1.8vw, 20px);
+    line-height: 1.5;
 }
 
 .frame {
@@ -133,7 +176,7 @@ nav {
 .frame p {
     text-align: center;
     font-family: Arial, sans-serif;
-    font-size: 40px;
+    font-size: clamp(24px, 3.2vw, 40px);
     margin: 30px;
 }
 
@@ -141,38 +184,40 @@ nav {
 .content {
     display: grid;
     gap: 1px;
-    /* grid-template-columns: auto auto auto auto auto; */
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px 100px 10px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 10px auto;
+    padding: 0 clamp(16px, 4vw, 100px);
 }
 
 .first {
-    margin: 10px 20px 10px 20px;
+    margin: 10px 0;
+    padding: 0 clamp(8px, 1.5vw, 20px);
 }
 
 .first p {
-    font-size: 20px;
+    font-size: clamp(14px, 1.8vw, 20px);
     text-align: start;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .first h1 {
-    font-size: 40px;
+    font-size: clamp(24px, 3vw, 40px);
     text-align: start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 .color {
-    font-size: 50px;
+    font-size: clamp(28px, 4vw, 50px);
     color: blue;
 }
 
 .popular {
     display: grid;
-    gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10px 200px 10px 200px;
+    gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 10px auto;
+    padding: 0 clamp(16px, 4vw, 200px);
 }
 
 .boxa {
@@ -205,9 +250,9 @@ nav {
     height: auto;
     display: grid;
     gap: 1px;
-    /* grid-template-columns: auto auto auto auto auto; */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px 200px 10px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    margin: 10px auto;
+    padding: 0 clamp(16px, 4vw, 200px);
 }
 
 .employe {
@@ -226,10 +271,10 @@ nav {
 .box {
     display: grid;
     color: wheat;
-    gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 10px 200px 10px 200px;
-    padding: 10px;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin: 10px auto;
+    padding: 10px clamp(10px, 2vw, 200px);
 
 }
 
@@ -239,26 +284,26 @@ nav {
 }
 
 .last-box p {
-    font-size: 20px;
+    font-size: clamp(14px, 1.8vw, 20px);
 }
 
 .image {
     display: grid;
     gap: 1px;
-
-    grid-template-columns: 1fr 1fr 1fr;
-    /* margin: 10px 200px 10px 200px; */
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .imagesss img {
     height: 60px;
-    width: 60p x;
+    width: 60px;
+    object-fit: cover;
+    display: block;
 }
 
 .second_last {
-    margin: 10px 200px 10px 200px;
+    margin: 10px auto;
     color: wheat;
-    padding: 30px;
+    padding: 30px clamp(16px, 4vw, 200px);
 }
 
 .second_last p {
